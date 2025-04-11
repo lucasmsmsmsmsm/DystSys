@@ -1,0 +1,33 @@
+
+syntax = "proto3";
+
+package securetest;
+
+service SecureTestService {
+  // Bi directional Streaming for test monitoring
+  rpc MonitorTestSession(stream Video) returns (stream MonitoringResponse);
+
+  // Client Streaming to upload the answers for the test
+  rpc UploadTestAnswers(stream TestAnswer) returns (UploadTestAnswersResponse);
+}
+
+// Messages for the simulation of the video streaming
+message Video {
+  bool camera = 1;
+}
+
+// Message for monitoring responses
+message MonitoringResponse {
+  string warning = 1;
+}
+
+// Message for test answers
+message TestAnswer {
+  string answers = 1;
+}
+
+// Response message for test answer upload
+message UploadTestAnswersResponse {
+  bool completedTest = 1;
+  string message = 2;
+}
