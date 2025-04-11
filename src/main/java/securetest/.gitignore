@@ -9,3 +9,6 @@
 
 # Ignore the jmdns directory if it's a dependency
 jmdns/
+.DS_Store
+*.DS_Store
+**/.DS_Store
