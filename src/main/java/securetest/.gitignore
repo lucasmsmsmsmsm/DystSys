@@ -1,0 +1,11 @@
+# Mac system files
+.DS_Store
+
+# IDE/filesystem artifacts
+*.iml
+.idea/
+*.swp
+*.swo
+
+# Ignore the jmdns directory if it's a dependency
+jmdns/
