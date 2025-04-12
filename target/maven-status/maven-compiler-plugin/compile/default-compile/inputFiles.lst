@@ -1,6 +1,6 @@
-/Users/lucasvasconcelos/Desktop/DistSys/RecruitmentDay/src/main/java/securetest/SecureTestServiceGrpc.java
-/Users/lucasvasconcelos/Desktop/DistSys/RecruitmentDay/src/main/java/turnstile/TurnstileServiceGrpc.java
-/Users/lucasvasconcelos/Desktop/DistSys/RecruitmentDay/src/main/java/turnstile/Turnstile.java
-/Users/lucasvasconcelos/Desktop/DistSys/RecruitmentDay/src/main/java/time/WaitServiceGrpc.java
-/Users/lucasvasconcelos/Desktop/DistSys/RecruitmentDay/src/main/java/securetest/Securetest.java
-/Users/lucasvasconcelos/Desktop/DistSys/RecruitmentDay/src/main/java/time/Time.java
+/Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/time/WaitServiceGrpc.java
+/Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/securetest/SecureTestServiceGrpc.java
+/Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/securetest/Securetest.java
+/Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/turnstile/TurnstileServiceGrpc.java
+/Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/time/Time.java
+/Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/turnstile/Turnstile.java
