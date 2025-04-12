@@ -1,2 +1,11 @@
+# Ignore Mac system files
 .DS_Store
-*.DS_Store
+
+# Ignore build outputs
+target/
+bin/
+*.class
+
+# Ignore IDE files
+.idea/
+*.iml
