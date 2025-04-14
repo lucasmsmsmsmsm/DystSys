@@ -2,17 +2,17 @@ syntax = "proto3";
 
 package time;
 
+option java_package = "distsys.recruitmentday.time";
+option java_outer_classname = "Time";
+
 service WaitService {
-  // Server sending messages to client with the remaining time
   rpc StreamWaitTime(WaitTimeRequest) returns (stream WaitTimeUpdate);
 }
 
-// Request message to start couting
 message WaitTimeRequest {
-  string device_id = 1; // Unique ID for the electronic device
+  string device_id = 1;
 }
 
-// Response message containing the waiting time
 message WaitTimeUpdate {
   string time_remaining = 1;
 }

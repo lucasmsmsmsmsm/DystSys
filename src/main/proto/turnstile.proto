@@ -1,19 +1,18 @@
-
 syntax = "proto3";
 
 package turnstile;
 
+option java_package = "distsys.recruitmentday.turnstile";
+option java_outer_classname = "Turnstile";
+
 service TurnstileService {
-  // To allow someone to enter the building get a valid pin
   rpc CheckPin(CheckPinRequest) returns (CheckPinResponse);
 }
 
-// Request message containing the pin
 message CheckPinRequest {
   int32 pin = 1;
 }
 
-// Response message grating or denying the access
 message CheckPinResponse {
   bool access_granted = 1;
   string message = 2;

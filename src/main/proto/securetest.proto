@@ -1,33 +1,28 @@
-
 syntax = "proto3";
 
 package securetest;
 
-service SecureTestService {
-  // Bi directional Streaming for test monitoring
-  rpc MonitorTestSession(stream Video) returns (stream MonitoringResponse);
+option java_package = "distsys.recruitmentday.securetest";
+option java_outer_classname = "SecureTestProto";
 
-  // Client Streaming to upload the answers for the test
-  rpc UploadTestAnswers(stream TestAnswer) returns (UploadTestAnswersResponse);
+service SecureTestService {
+  rpc MonitorTestSession(stream Video) returns (stream MonitoringResponse);
+  rpc SubmitTestAnswers(stream TestAnswer) returns (TestResult);
 }
 
-// Messages for the simulation of the video streaming
 message Video {
   bool camera = 1;
 }
 
-// Message for monitoring responses
 message MonitoringResponse {
   string warning = 1;
 }
 
-// Message for test answers
 message TestAnswer {
-  string answers = 1;
+  string answer = 1;
 }
 
-// Response message for test answer upload
-message UploadTestAnswersResponse {
-  bool completedTest = 1;
-  string message = 2;
+message TestResult {
+  string message = 1;
+  repeated string answers = 2;
 }
