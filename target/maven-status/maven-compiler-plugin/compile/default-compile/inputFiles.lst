@@ -1,11 +1,12 @@
 /Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/securetest/SecureTestServiceGrpc.java
 /Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/RecruitmentClient.java
 /Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/turnstile/Turnstile.java
+/Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/RecruitmentGUI.java
 /Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/time/Time.java
 /Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/securetest/SecureTest.java
 /Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/time/WaitServiceGrpc.java
-/Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/securetest/SecureTestProto.java
 /Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/WaitService.java
 /Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/TurnstileService.java
+/Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/SecureTestService.java
 /Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/RecruitmentServer.java
 /Users/lucasvasconcelos/Desktop/RecruitmentDay/src/main/java/distsys/recruitmentday/turnstile/TurnstileServiceGrpc.java

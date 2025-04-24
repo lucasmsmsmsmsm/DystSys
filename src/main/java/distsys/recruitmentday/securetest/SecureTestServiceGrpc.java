@@ -15,29 +15,29 @@ public final class SecureTestServiceGrpc {
   public static final String SERVICE_NAME = "securetest.SecureTestService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTestProto.Video,
-      distsys.recruitmentday.securetest.SecureTestProto.MonitoringResponse> getMonitorTestSessionMethod;
+  private static volatile io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTest.Video,
+      distsys.recruitmentday.securetest.SecureTest.MonitoringResponse> getMonitorTestSessionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "MonitorTestSession",
-      requestType = distsys.recruitmentday.securetest.SecureTestProto.Video.class,
-      responseType = distsys.recruitmentday.securetest.SecureTestProto.MonitoringResponse.class,
+      requestType = distsys.recruitmentday.securetest.SecureTest.Video.class,
+      responseType = distsys.recruitmentday.securetest.SecureTest.MonitoringResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTestProto.Video,
-      distsys.recruitmentday.securetest.SecureTestProto.MonitoringResponse> getMonitorTestSessionMethod() {
-    io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTestProto.Video, distsys.recruitmentday.securetest.SecureTestProto.MonitoringResponse> getMonitorTestSessionMethod;
+  public static io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTest.Video,
+      distsys.recruitmentday.securetest.SecureTest.MonitoringResponse> getMonitorTestSessionMethod() {
+    io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTest.Video, distsys.recruitmentday.securetest.SecureTest.MonitoringResponse> getMonitorTestSessionMethod;
     if ((getMonitorTestSessionMethod = SecureTestServiceGrpc.getMonitorTestSessionMethod) == null) {
       synchronized (SecureTestServiceGrpc.class) {
         if ((getMonitorTestSessionMethod = SecureTestServiceGrpc.getMonitorTestSessionMethod) == null) {
           SecureTestServiceGrpc.getMonitorTestSessionMethod = getMonitorTestSessionMethod =
-              io.grpc.MethodDescriptor.<distsys.recruitmentday.securetest.SecureTestProto.Video, distsys.recruitmentday.securetest.SecureTestProto.MonitoringResponse>newBuilder()
+              io.grpc.MethodDescriptor.<distsys.recruitmentday.securetest.SecureTest.Video, distsys.recruitmentday.securetest.SecureTest.MonitoringResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "MonitorTestSession"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  distsys.recruitmentday.securetest.SecureTestProto.Video.getDefaultInstance()))
+                  distsys.recruitmentday.securetest.SecureTest.Video.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  distsys.recruitmentday.securetest.SecureTestProto.MonitoringResponse.getDefaultInstance()))
+                  distsys.recruitmentday.securetest.SecureTest.MonitoringResponse.getDefaultInstance()))
               .setSchemaDescriptor(new SecureTestServiceMethodDescriptorSupplier("MonitorTestSession"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class SecureTestServiceGrpc {
     return getMonitorTestSessionMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTestProto.TestAnswer,
-      distsys.recruitmentday.securetest.SecureTestProto.TestResult> getSubmitTestAnswersMethod;
+  private static volatile io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTest.TestAnswer,
+      distsys.recruitmentday.securetest.SecureTest.TestResult> getSubmitTestAnswersMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SubmitTestAnswers",
-      requestType = distsys.recruitmentday.securetest.SecureTestProto.TestAnswer.class,
-      responseType = distsys.recruitmentday.securetest.SecureTestProto.TestResult.class,
+      requestType = distsys.recruitmentday.securetest.SecureTest.TestAnswer.class,
+      responseType = distsys.recruitmentday.securetest.SecureTest.TestResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTestProto.TestAnswer,
-      distsys.recruitmentday.securetest.SecureTestProto.TestResult> getSubmitTestAnswersMethod() {
-    io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTestProto.TestAnswer, distsys.recruitmentday.securetest.SecureTestProto.TestResult> getSubmitTestAnswersMethod;
+  public static io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTest.TestAnswer,
+      distsys.recruitmentday.securetest.SecureTest.TestResult> getSubmitTestAnswersMethod() {
+    io.grpc.MethodDescriptor<distsys.recruitmentday.securetest.SecureTest.TestAnswer, distsys.recruitmentday.securetest.SecureTest.TestResult> getSubmitTestAnswersMethod;
     if ((getSubmitTestAnswersMethod = SecureTestServiceGrpc.getSubmitTestAnswersMethod) == null) {
       synchronized (SecureTestServiceGrpc.class) {
         if ((getSubmitTestAnswersMethod = SecureTestServiceGrpc.getSubmitTestAnswersMethod) == null) {
           SecureTestServiceGrpc.getSubmitTestAnswersMethod = getSubmitTestAnswersMethod =
-              io.grpc.MethodDescriptor.<distsys.recruitmentday.securetest.SecureTestProto.TestAnswer, distsys.recruitmentday.securetest.SecureTestProto.TestResult>newBuilder()
+              io.grpc.MethodDescriptor.<distsys.recruitmentday.securetest.SecureTest.TestAnswer, distsys.recruitmentday.securetest.SecureTest.TestResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SubmitTestAnswers"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  distsys.recruitmentday.securetest.SecureTestProto.TestAnswer.getDefaultInstance()))
+                  distsys.recruitmentday.securetest.SecureTest.TestAnswer.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  distsys.recruitmentday.securetest.SecureTestProto.TestResult.getDefaultInstance()))
+                  distsys.recruitmentday.securetest.SecureTest.TestResult.getDefaultInstance()))
               .setSchemaDescriptor(new SecureTestServiceMethodDescriptorSupplier("SubmitTestAnswers"))
               .build();
         }
@@ -127,15 +127,15 @@ public final class SecureTestServiceGrpc {
 
     /**
      */
-    public io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTestProto.Video> monitorTestSession(
-        io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTestProto.MonitoringResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTest.Video> monitorTestSession(
+        io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTest.MonitoringResponse> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getMonitorTestSessionMethod(), responseObserver);
     }
 
     /**
      */
-    public io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTestProto.TestAnswer> submitTestAnswers(
-        io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTestProto.TestResult> responseObserver) {
+    public io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTest.TestAnswer> submitTestAnswers(
+        io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTest.TestResult> responseObserver) {
       return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getSubmitTestAnswersMethod(), responseObserver);
     }
 
@@ -145,15 +145,15 @@ public final class SecureTestServiceGrpc {
             getMonitorTestSessionMethod(),
             io.grpc.stub.ServerCalls.asyncBidiStreamingCall(
               new MethodHandlers<
-                distsys.recruitmentday.securetest.SecureTestProto.Video,
-                distsys.recruitmentday.securetest.SecureTestProto.MonitoringResponse>(
+                distsys.recruitmentday.securetest.SecureTest.Video,
+                distsys.recruitmentday.securetest.SecureTest.MonitoringResponse>(
                   this, METHODID_MONITOR_TEST_SESSION)))
           .addMethod(
             getSubmitTestAnswersMethod(),
             io.grpc.stub.ServerCalls.asyncClientStreamingCall(
               new MethodHandlers<
-                distsys.recruitmentday.securetest.SecureTestProto.TestAnswer,
-                distsys.recruitmentday.securetest.SecureTestProto.TestResult>(
+                distsys.recruitmentday.securetest.SecureTest.TestAnswer,
+                distsys.recruitmentday.securetest.SecureTest.TestResult>(
                   this, METHODID_SUBMIT_TEST_ANSWERS)))
           .build();
     }
@@ -175,16 +175,16 @@ public final class SecureTestServiceGrpc {
 
     /**
      */
-    public io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTestProto.Video> monitorTestSession(
-        io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTestProto.MonitoringResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTest.Video> monitorTestSession(
+        io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTest.MonitoringResponse> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncBidiStreamingCall(
           getChannel().newCall(getMonitorTestSessionMethod(), getCallOptions()), responseObserver);
     }
 
     /**
      */
-    public io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTestProto.TestAnswer> submitTestAnswers(
-        io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTestProto.TestResult> responseObserver) {
+    public io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTest.TestAnswer> submitTestAnswers(
+        io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTest.TestResult> responseObserver) {
       return io.grpc.stub.ClientCalls.asyncClientStreamingCall(
           getChannel().newCall(getSubmitTestAnswersMethod(), getCallOptions()), responseObserver);
     }
@@ -252,10 +252,10 @@ public final class SecureTestServiceGrpc {
       switch (methodId) {
         case METHODID_MONITOR_TEST_SESSION:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.monitorTestSession(
-              (io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTestProto.MonitoringResponse>) responseObserver);
+              (io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTest.MonitoringResponse>) responseObserver);
         case METHODID_SUBMIT_TEST_ANSWERS:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.submitTestAnswers(
-              (io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTestProto.TestResult>) responseObserver);
+              (io.grpc.stub.StreamObserver<distsys.recruitmentday.securetest.SecureTest.TestResult>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -268,7 +268,7 @@ public final class SecureTestServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return distsys.recruitmentday.securetest.SecureTestProto.getDescriptor();
+      return distsys.recruitmentday.securetest.SecureTest.getDescriptor();
     }
 
     @java.lang.Override

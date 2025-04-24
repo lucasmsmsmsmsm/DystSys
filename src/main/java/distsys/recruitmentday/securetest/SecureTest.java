@@ -1080,16 +1080,16 @@ public final class SecureTest {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string answers = 1;</code>
-     * @return The answers.
+     * <code>string answer = 1;</code>
+     * @return The answer.
      */
-    java.lang.String getAnswers();
+    java.lang.String getAnswer();
     /**
-     * <code>string answers = 1;</code>
-     * @return The bytes for answers.
+     * <code>string answer = 1;</code>
+     * @return The bytes for answer.
      */
     com.google.protobuf.ByteString
-        getAnswersBytes();
+        getAnswerBytes();
   }
   /**
    * Protobuf type {@code securetest.TestAnswer}
@@ -1104,7 +1104,7 @@ public final class SecureTest {
       super(builder);
     }
     private TestAnswer() {
-      answers_ = "";
+      answer_ = "";
     }
 
     @java.lang.Override
@@ -1140,7 +1140,7 @@ public final class SecureTest {
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              answers_ = s;
+              answer_ = s;
               break;
             }
             default: {
@@ -1177,38 +1177,38 @@ public final class SecureTest {
               distsys.recruitmentday.securetest.SecureTest.TestAnswer.class, distsys.recruitmentday.securetest.SecureTest.TestAnswer.Builder.class);
     }
 
-    public static final int ANSWERS_FIELD_NUMBER = 1;
-    private volatile java.lang.Object answers_;
+    public static final int ANSWER_FIELD_NUMBER = 1;
+    private volatile java.lang.Object answer_;
     /**
-     * <code>string answers = 1;</code>
-     * @return The answers.
+     * <code>string answer = 1;</code>
+     * @return The answer.
      */
     @java.lang.Override
-    public java.lang.String getAnswers() {
-      java.lang.Object ref = answers_;
+    public java.lang.String getAnswer() {
+      java.lang.Object ref = answer_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        answers_ = s;
+        answer_ = s;
         return s;
       }
     }
     /**
-     * <code>string answers = 1;</code>
-     * @return The bytes for answers.
+     * <code>string answer = 1;</code>
+     * @return The bytes for answer.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getAnswersBytes() {
-      java.lang.Object ref = answers_;
+        getAnswerBytes() {
+      java.lang.Object ref = answer_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        answers_ = b;
+        answer_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1229,8 +1229,8 @@ public final class SecureTest {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(answers_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, answers_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(answer_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, answer_);
       }
       unknownFields.writeTo(output);
     }
@@ -1241,8 +1241,8 @@ public final class SecureTest {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(answers_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, answers_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(answer_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, answer_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1259,8 +1259,8 @@ public final class SecureTest {
       }
       distsys.recruitmentday.securetest.SecureTest.TestAnswer other = (distsys.recruitmentday.securetest.SecureTest.TestAnswer) obj;
 
-      if (!getAnswers()
-          .equals(other.getAnswers())) return false;
+      if (!getAnswer()
+          .equals(other.getAnswer())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1272,8 +1272,8 @@ public final class SecureTest {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ANSWERS_FIELD_NUMBER;
-      hash = (53 * hash) + getAnswers().hashCode();
+      hash = (37 * hash) + ANSWER_FIELD_NUMBER;
+      hash = (53 * hash) + getAnswer().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1407,7 +1407,7 @@ public final class SecureTest {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        answers_ = "";
+        answer_ = "";
 
         return this;
       }
@@ -1435,7 +1435,7 @@ public final class SecureTest {
       @java.lang.Override
       public distsys.recruitmentday.securetest.SecureTest.TestAnswer buildPartial() {
         distsys.recruitmentday.securetest.SecureTest.TestAnswer result = new distsys.recruitmentday.securetest.SecureTest.TestAnswer(this);
-        result.answers_ = answers_;
+        result.answer_ = answer_;
         onBuilt();
         return result;
       }
@@ -1484,8 +1484,8 @@ public final class SecureTest {
 
       public Builder mergeFrom(distsys.recruitmentday.securetest.SecureTest.TestAnswer other) {
         if (other == distsys.recruitmentday.securetest.SecureTest.TestAnswer.getDefaultInstance()) return this;
-        if (!other.getAnswers().isEmpty()) {
-          answers_ = other.answers_;
+        if (!other.getAnswer().isEmpty()) {
+          answer_ = other.answer_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -1517,78 +1517,78 @@ public final class SecureTest {
         return this;
       }
 
-      private java.lang.Object answers_ = "";
+      private java.lang.Object answer_ = "";
       /**
-       * <code>string answers = 1;</code>
-       * @return The answers.
+       * <code>string answer = 1;</code>
+       * @return The answer.
        */
-      public java.lang.String getAnswers() {
-        java.lang.Object ref = answers_;
+      public java.lang.String getAnswer() {
+        java.lang.Object ref = answer_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          answers_ = s;
+          answer_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string answers = 1;</code>
-       * @return The bytes for answers.
+       * <code>string answer = 1;</code>
+       * @return The bytes for answer.
        */
       public com.google.protobuf.ByteString
-          getAnswersBytes() {
-        java.lang.Object ref = answers_;
+          getAnswerBytes() {
+        java.lang.Object ref = answer_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          answers_ = b;
+          answer_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string answers = 1;</code>
-       * @param value The answers to set.
+       * <code>string answer = 1;</code>
+       * @param value The answer to set.
        * @return This builder for chaining.
        */
-      public Builder setAnswers(
+      public Builder setAnswer(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        answers_ = value;
+        answer_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string answers = 1;</code>
+       * <code>string answer = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAnswers() {
+      public Builder clearAnswer() {
         
-        answers_ = getDefaultInstance().getAnswers();
+        answer_ = getDefaultInstance().getAnswer();
         onChanged();
         return this;
       }
       /**
-       * <code>string answers = 1;</code>
-       * @param value The bytes for answers to set.
+       * <code>string answer = 1;</code>
+       * @param value The bytes for answer to set.
        * @return This builder for chaining.
        */
-      public Builder setAnswersBytes(
+      public Builder setAnswerBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        answers_ = value;
+        answer_ = value;
         onChanged();
         return this;
       }
@@ -1645,49 +1645,69 @@ public final class SecureTest {
 
   }
 
-  public interface UploadTestAnswersResponseOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:securetest.UploadTestAnswersResponse)
+  public interface TestResultOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:securetest.TestResult)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool completedTest = 1;</code>
-     * @return The completedTest.
-     */
-    boolean getCompletedTest();
-
-    /**
-     * <code>string message = 2;</code>
+     * <code>string message = 1;</code>
      * @return The message.
      */
     java.lang.String getMessage();
     /**
-     * <code>string message = 2;</code>
+     * <code>string message = 1;</code>
      * @return The bytes for message.
      */
     com.google.protobuf.ByteString
         getMessageBytes();
+
+    /**
+     * <code>repeated string answers = 2;</code>
+     * @return A list containing the answers.
+     */
+    java.util.List<java.lang.String>
+        getAnswersList();
+    /**
+     * <code>repeated string answers = 2;</code>
+     * @return The count of answers.
+     */
+    int getAnswersCount();
+    /**
+     * <code>repeated string answers = 2;</code>
+     * @param index The index of the element to return.
+     * @return The answers at the given index.
+     */
+    java.lang.String getAnswers(int index);
+    /**
+     * <code>repeated string answers = 2;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the answers at the given index.
+     */
+    com.google.protobuf.ByteString
+        getAnswersBytes(int index);
   }
   /**
-   * Protobuf type {@code securetest.UploadTestAnswersResponse}
+   * Protobuf type {@code securetest.TestResult}
    */
-  public static final class UploadTestAnswersResponse extends
+  public static final class TestResult extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:securetest.UploadTestAnswersResponse)
-      UploadTestAnswersResponseOrBuilder {
+      // @@protoc_insertion_point(message_implements:securetest.TestResult)
+      TestResultOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use UploadTestAnswersResponse.newBuilder() to construct.
-    private UploadTestAnswersResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use TestResult.newBuilder() to construct.
+    private TestResult(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private UploadTestAnswersResponse() {
+    private TestResult() {
       message_ = "";
+      answers_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new UploadTestAnswersResponse();
+      return new TestResult();
     }
 
     @java.lang.Override
@@ -1695,7 +1715,7 @@ public final class SecureTest {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private UploadTestAnswersResponse(
+    private TestResult(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1703,6 +1723,7 @@ public final class SecureTest {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -1713,15 +1734,19 @@ public final class SecureTest {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              completedTest_ = input.readBool();
+              message_ = s;
               break;
             }
             case 18: {
               java.lang.String s = input.readStringRequireUtf8();
-
-              message_ = s;
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                answers_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              answers_.add(s);
               break;
             }
             default: {
@@ -1741,38 +1766,30 @@ public final class SecureTest {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          answers_ = answers_.getUnmodifiableView();
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return distsys.recruitmentday.securetest.SecureTest.internal_static_securetest_UploadTestAnswersResponse_descriptor;
+      return distsys.recruitmentday.securetest.SecureTest.internal_static_securetest_TestResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return distsys.recruitmentday.securetest.SecureTest.internal_static_securetest_UploadTestAnswersResponse_fieldAccessorTable
+      return distsys.recruitmentday.securetest.SecureTest.internal_static_securetest_TestResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse.class, distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse.Builder.class);
+              distsys.recruitmentday.securetest.SecureTest.TestResult.class, distsys.recruitmentday.securetest.SecureTest.TestResult.Builder.class);
     }
 
-    public static final int COMPLETEDTEST_FIELD_NUMBER = 1;
-    private boolean completedTest_;
-    /**
-     * <code>bool completedTest = 1;</code>
-     * @return The completedTest.
-     */
-    @java.lang.Override
-    public boolean getCompletedTest() {
-      return completedTest_;
-    }
-
-    public static final int MESSAGE_FIELD_NUMBER = 2;
+    public static final int MESSAGE_FIELD_NUMBER = 1;
     private volatile java.lang.Object message_;
     /**
-     * <code>string message = 2;</code>
+     * <code>string message = 1;</code>
      * @return The message.
      */
     @java.lang.Override
@@ -1789,7 +1806,7 @@ public final class SecureTest {
       }
     }
     /**
-     * <code>string message = 2;</code>
+     * <code>string message = 1;</code>
      * @return The bytes for message.
      */
     @java.lang.Override
@@ -1807,6 +1824,41 @@ public final class SecureTest {
       }
     }
 
+    public static final int ANSWERS_FIELD_NUMBER = 2;
+    private com.google.protobuf.LazyStringList answers_;
+    /**
+     * <code>repeated string answers = 2;</code>
+     * @return A list containing the answers.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getAnswersList() {
+      return answers_;
+    }
+    /**
+     * <code>repeated string answers = 2;</code>
+     * @return The count of answers.
+     */
+    public int getAnswersCount() {
+      return answers_.size();
+    }
+    /**
+     * <code>repeated string answers = 2;</code>
+     * @param index The index of the element to return.
+     * @return The answers at the given index.
+     */
+    public java.lang.String getAnswers(int index) {
+      return answers_.get(index);
+    }
+    /**
+     * <code>repeated string answers = 2;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the answers at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getAnswersBytes(int index) {
+      return answers_.getByteString(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -1821,11 +1873,11 @@ public final class SecureTest {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (completedTest_ != false) {
-        output.writeBool(1, completedTest_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, message_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, message_);
+      }
+      for (int i = 0; i < answers_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, answers_.getRaw(i));
       }
       unknownFields.writeTo(output);
     }
@@ -1836,12 +1888,16 @@ public final class SecureTest {
       if (size != -1) return size;
 
       size = 0;
-      if (completedTest_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, completedTest_);
-      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, message_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, message_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < answers_.size(); i++) {
+          dataSize += computeStringSizeNoTag(answers_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getAnswersList().size();
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1853,15 +1909,15 @@ public final class SecureTest {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse)) {
+      if (!(obj instanceof distsys.recruitmentday.securetest.SecureTest.TestResult)) {
         return super.equals(obj);
       }
-      distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse other = (distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse) obj;
+      distsys.recruitmentday.securetest.SecureTest.TestResult other = (distsys.recruitmentday.securetest.SecureTest.TestResult) obj;
 
-      if (getCompletedTest()
-          != other.getCompletedTest()) return false;
       if (!getMessage()
           .equals(other.getMessage())) return false;
+      if (!getAnswersList()
+          .equals(other.getAnswersList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1873,79 +1929,80 @@ public final class SecureTest {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + COMPLETEDTEST_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getCompletedTest());
       hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
       hash = (53 * hash) + getMessage().hashCode();
+      if (getAnswersCount() > 0) {
+        hash = (37 * hash) + ANSWERS_FIELD_NUMBER;
+        hash = (53 * hash) + getAnswersList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseFrom(
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseFrom(
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseFrom(
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseFrom(
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseFrom(byte[] data)
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseFrom(
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseFrom(java.io.InputStream input)
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseFrom(
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseDelimitedFrom(java.io.InputStream input)
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseDelimitedFrom(
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseFrom(
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parseFrom(
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1958,7 +2015,7 @@ public final class SecureTest {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse prototype) {
+    public static Builder newBuilder(distsys.recruitmentday.securetest.SecureTest.TestResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1974,26 +2031,26 @@ public final class SecureTest {
       return builder;
     }
     /**
-     * Protobuf type {@code securetest.UploadTestAnswersResponse}
+     * Protobuf type {@code securetest.TestResult}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:securetest.UploadTestAnswersResponse)
-        distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponseOrBuilder {
+        // @@protoc_insertion_point(builder_implements:securetest.TestResult)
+        distsys.recruitmentday.securetest.SecureTest.TestResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return distsys.recruitmentday.securetest.SecureTest.internal_static_securetest_UploadTestAnswersResponse_descriptor;
+        return distsys.recruitmentday.securetest.SecureTest.internal_static_securetest_TestResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return distsys.recruitmentday.securetest.SecureTest.internal_static_securetest_UploadTestAnswersResponse_fieldAccessorTable
+        return distsys.recruitmentday.securetest.SecureTest.internal_static_securetest_TestResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse.class, distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse.Builder.class);
+                distsys.recruitmentday.securetest.SecureTest.TestResult.class, distsys.recruitmentday.securetest.SecureTest.TestResult.Builder.class);
       }
 
-      // Construct using distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse.newBuilder()
+      // Construct using distsys.recruitmentday.securetest.SecureTest.TestResult.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2011,27 +2068,27 @@ public final class SecureTest {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        completedTest_ = false;
-
         message_ = "";
 
+        answers_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return distsys.recruitmentday.securetest.SecureTest.internal_static_securetest_UploadTestAnswersResponse_descriptor;
+        return distsys.recruitmentday.securetest.SecureTest.internal_static_securetest_TestResult_descriptor;
       }
 
       @java.lang.Override
-      public distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse getDefaultInstanceForType() {
-        return distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse.getDefaultInstance();
+      public distsys.recruitmentday.securetest.SecureTest.TestResult getDefaultInstanceForType() {
+        return distsys.recruitmentday.securetest.SecureTest.TestResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse build() {
-        distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse result = buildPartial();
+      public distsys.recruitmentday.securetest.SecureTest.TestResult build() {
+        distsys.recruitmentday.securetest.SecureTest.TestResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2039,10 +2096,15 @@ public final class SecureTest {
       }
 
       @java.lang.Override
-      public distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse buildPartial() {
-        distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse result = new distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse(this);
-        result.completedTest_ = completedTest_;
+      public distsys.recruitmentday.securetest.SecureTest.TestResult buildPartial() {
+        distsys.recruitmentday.securetest.SecureTest.TestResult result = new distsys.recruitmentday.securetest.SecureTest.TestResult(this);
+        int from_bitField0_ = bitField0_;
         result.message_ = message_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          answers_ = answers_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.answers_ = answers_;
         onBuilt();
         return result;
       }
@@ -2081,21 +2143,28 @@ public final class SecureTest {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse) {
-          return mergeFrom((distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse)other);
+        if (other instanceof distsys.recruitmentday.securetest.SecureTest.TestResult) {
+          return mergeFrom((distsys.recruitmentday.securetest.SecureTest.TestResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse other) {
-        if (other == distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse.getDefaultInstance()) return this;
-        if (other.getCompletedTest() != false) {
-          setCompletedTest(other.getCompletedTest());
-        }
+      public Builder mergeFrom(distsys.recruitmentday.securetest.SecureTest.TestResult other) {
+        if (other == distsys.recruitmentday.securetest.SecureTest.TestResult.getDefaultInstance()) return this;
         if (!other.getMessage().isEmpty()) {
           message_ = other.message_;
+          onChanged();
+        }
+        if (!other.answers_.isEmpty()) {
+          if (answers_.isEmpty()) {
+            answers_ = other.answers_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureAnswersIsMutable();
+            answers_.addAll(other.answers_);
+          }
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -2113,11 +2182,11 @@ public final class SecureTest {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse parsedMessage = null;
+        distsys.recruitmentday.securetest.SecureTest.TestResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse) e.getUnfinishedMessage();
+          parsedMessage = (distsys.recruitmentday.securetest.SecureTest.TestResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2126,41 +2195,11 @@ public final class SecureTest {
         }
         return this;
       }
-
-      private boolean completedTest_ ;
-      /**
-       * <code>bool completedTest = 1;</code>
-       * @return The completedTest.
-       */
-      @java.lang.Override
-      public boolean getCompletedTest() {
-        return completedTest_;
-      }
-      /**
-       * <code>bool completedTest = 1;</code>
-       * @param value The completedTest to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCompletedTest(boolean value) {
-        
-        completedTest_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool completedTest = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCompletedTest() {
-        
-        completedTest_ = false;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private java.lang.Object message_ = "";
       /**
-       * <code>string message = 2;</code>
+       * <code>string message = 1;</code>
        * @return The message.
        */
       public java.lang.String getMessage() {
@@ -2176,7 +2215,7 @@ public final class SecureTest {
         }
       }
       /**
-       * <code>string message = 2;</code>
+       * <code>string message = 1;</code>
        * @return The bytes for message.
        */
       public com.google.protobuf.ByteString
@@ -2193,7 +2232,7 @@ public final class SecureTest {
         }
       }
       /**
-       * <code>string message = 2;</code>
+       * <code>string message = 1;</code>
        * @param value The message to set.
        * @return This builder for chaining.
        */
@@ -2208,7 +2247,7 @@ public final class SecureTest {
         return this;
       }
       /**
-       * <code>string message = 2;</code>
+       * <code>string message = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMessage() {
@@ -2218,7 +2257,7 @@ public final class SecureTest {
         return this;
       }
       /**
-       * <code>string message = 2;</code>
+       * <code>string message = 1;</code>
        * @param value The bytes for message to set.
        * @return This builder for chaining.
        */
@@ -2230,6 +2269,116 @@ public final class SecureTest {
   checkByteStringIsUtf8(value);
         
         message_ = value;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.LazyStringList answers_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureAnswersIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          answers_ = new com.google.protobuf.LazyStringArrayList(answers_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated string answers = 2;</code>
+       * @return A list containing the answers.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getAnswersList() {
+        return answers_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string answers = 2;</code>
+       * @return The count of answers.
+       */
+      public int getAnswersCount() {
+        return answers_.size();
+      }
+      /**
+       * <code>repeated string answers = 2;</code>
+       * @param index The index of the element to return.
+       * @return The answers at the given index.
+       */
+      public java.lang.String getAnswers(int index) {
+        return answers_.get(index);
+      }
+      /**
+       * <code>repeated string answers = 2;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the answers at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getAnswersBytes(int index) {
+        return answers_.getByteString(index);
+      }
+      /**
+       * <code>repeated string answers = 2;</code>
+       * @param index The index to set the value at.
+       * @param value The answers to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAnswers(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureAnswersIsMutable();
+        answers_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string answers = 2;</code>
+       * @param value The answers to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAnswers(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureAnswersIsMutable();
+        answers_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string answers = 2;</code>
+       * @param values The answers to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllAnswers(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureAnswersIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, answers_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string answers = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAnswers() {
+        answers_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string answers = 2;</code>
+       * @param value The bytes of the answers to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAnswersBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureAnswersIsMutable();
+        answers_.add(value);
         onChanged();
         return this;
       }
@@ -2246,41 +2395,41 @@ public final class SecureTest {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:securetest.UploadTestAnswersResponse)
+      // @@protoc_insertion_point(builder_scope:securetest.TestResult)
     }
 
-    // @@protoc_insertion_point(class_scope:securetest.UploadTestAnswersResponse)
-    private static final distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:securetest.TestResult)
+    private static final distsys.recruitmentday.securetest.SecureTest.TestResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse();
+      DEFAULT_INSTANCE = new distsys.recruitmentday.securetest.SecureTest.TestResult();
     }
 
-    public static distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse getDefaultInstance() {
+    public static distsys.recruitmentday.securetest.SecureTest.TestResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<UploadTestAnswersResponse>
-        PARSER = new com.google.protobuf.AbstractParser<UploadTestAnswersResponse>() {
+    private static final com.google.protobuf.Parser<TestResult>
+        PARSER = new com.google.protobuf.AbstractParser<TestResult>() {
       @java.lang.Override
-      public UploadTestAnswersResponse parsePartialFrom(
+      public TestResult parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new UploadTestAnswersResponse(input, extensionRegistry);
+        return new TestResult(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<UploadTestAnswersResponse> parser() {
+    public static com.google.protobuf.Parser<TestResult> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<UploadTestAnswersResponse> getParserForType() {
+    public com.google.protobuf.Parser<TestResult> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public distsys.recruitmentday.securetest.SecureTest.UploadTestAnswersResponse getDefaultInstanceForType() {
+    public distsys.recruitmentday.securetest.SecureTest.TestResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2302,10 +2451,10 @@ public final class SecureTest {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_securetest_TestAnswer_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_securetest_UploadTestAnswersResponse_descriptor;
+    internal_static_securetest_TestResult_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_securetest_UploadTestAnswersResponse_fieldAccessorTable;
+      internal_static_securetest_TestResult_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2317,15 +2466,14 @@ public final class SecureTest {
     java.lang.String[] descriptorData = {
       "\n\020securetest.proto\022\nsecuretest\"\027\n\005Video\022" +
       "\016\n\006camera\030\001 \001(\010\"%\n\022MonitoringResponse\022\017\n" +
-      "\007warning\030\001 \001(\t\"\035\n\nTestAnswer\022\017\n\007answers\030" +
-      "\001 \001(\t\"C\n\031UploadTestAnswersResponse\022\025\n\rco" +
-      "mpletedTest\030\001 \001(\010\022\017\n\007message\030\002 \001(\t2\266\001\n\021S" +
-      "ecureTestService\022K\n\022MonitorTestSession\022\021" +
-      ".securetest.Video\032\036.securetest.Monitorin" +
-      "gResponse(\0010\001\022T\n\021UploadTestAnswers\022\026.sec" +
-      "uretest.TestAnswer\032%.securetest.UploadTe" +
-      "stAnswersResponse(\001B/\n!distsys.recruitme" +
-      "ntday.securetestB\nSecureTestb\006proto3"
+      "\007warning\030\001 \001(\t\"\034\n\nTestAnswer\022\016\n\006answer\030\001" +
+      " \001(\t\".\n\nTestResult\022\017\n\007message\030\001 \001(\t\022\017\n\007a" +
+      "nswers\030\002 \003(\t2\247\001\n\021SecureTestService\022K\n\022Mo" +
+      "nitorTestSession\022\021.securetest.Video\032\036.se" +
+      "curetest.MonitoringResponse(\0010\001\022E\n\021Submi" +
+      "tTestAnswers\022\026.securetest.TestAnswer\032\026.s" +
+      "ecuretest.TestResult(\001B/\n!distsys.recrui" +
+      "tmentday.securetestB\nSecureTestb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2348,13 +2496,13 @@ public final class SecureTest {
     internal_static_securetest_TestAnswer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_securetest_TestAnswer_descriptor,
-        new java.lang.String[] { "Answers", });
-    internal_static_securetest_UploadTestAnswersResponse_descriptor =
+        new java.lang.String[] { "Answer", });
+    internal_static_securetest_TestResult_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_securetest_UploadTestAnswersResponse_fieldAccessorTable = new
+    internal_static_securetest_TestResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_securetest_UploadTestAnswersResponse_descriptor,
-        new java.lang.String[] { "CompletedTest", "Message", });
+        internal_static_securetest_TestResult_descriptor,
+        new java.lang.String[] { "Message", "Answers", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

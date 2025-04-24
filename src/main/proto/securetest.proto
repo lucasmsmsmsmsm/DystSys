@@ -3,7 +3,7 @@ syntax = "proto3";
 package securetest;
 
 option java_package = "distsys.recruitmentday.securetest";
-option java_outer_classname = "SecureTestProto";
+option java_outer_classname = "SecureTest";
 
 service SecureTestService {
   rpc MonitorTestSession(stream Video) returns (stream MonitoringResponse);
